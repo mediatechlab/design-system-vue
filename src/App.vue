@@ -8,12 +8,14 @@
           <m-button>Primary - No Shadow</m-button>
           <m-button shadow>Primary - With Shadow</m-button>
           <m-button outline>Primary - With Outline</m-button>
+          <m-button none>Primary - None</m-button>
         </div>
 
         <div class="container__bottom">
           <m-button disabled>Primary - No Shadow - Disabled</m-button>
           <m-button disabled shadow>Primary - With Shadow - Disabled</m-button>
           <m-button disabled outline>Primary - With Outline - Disabled</m-button>
+          <m-button disabled none>Primary - None - Disabled</m-button>
         </div>
       </div>
     </div>

@@ -1,5 +1,5 @@
 <template>
-  <button class="m_btn" :class="{ m_btn_shadow: shadow, m_btn_outline: outline }" :disabled="disabled">
+  <button class="m_btn" :class="{ m_btn_shadow: shadow, m_btn_outline: outline, m_btn_none: none }" :disabled="disabled">
     <slot></slot>
   </button>
 </template>
@@ -10,7 +10,8 @@ export default {
   props: {
     shadow: Boolean,
     outline: Boolean,
-    disabled: Boolean
+    disabled: Boolean,
+    none: Boolean
   }
 };
 </script>
@@ -67,6 +68,26 @@ export default {
 
 .m_btn_outline:disabled {
   background: #f1eaff 0% 0% no-repeat padding-box;
+  border: 0;
+}
+
+.m_btn_none {
+  border: none;
+  background: none;
+  color: #651fff;
+}
+
+.m_btn_none:hover {
+  background: #bb9bff59 0% 0% no-repeat padding-box;
+}
+
+.m_btn_none:active {
+  background: #a255fc8c 0% 0% no-repeat padding-box;
+}
+
+.m_btn_none:disabled {
+  background: none;
+  color: #c4b9db;
   border: 0;
 }
 </style>
