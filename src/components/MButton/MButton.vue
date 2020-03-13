@@ -16,28 +16,29 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .m_btn {
-  background: #6524FB 0% 0% no-repeat padding-box;
+  background: #6524fb 0% 0% no-repeat padding-box;
   width: 98px;
   height: 42px;
-  color: #fff;
+  color: #ffffff;
   font-size: 14px;
   letter-spacing: 0;
   border: 0;
   border-radius: 100px;
   outline: 0;
+  vertical-align: middle;
 }
 
 .m_btn:hover {
-  background: #B278F8 0% 0% no-repeat padding-box;
+  background: #b278f8 0% 0% no-repeat padding-box;
 }
 
 .m_btn:active {
-  background: #A255FC 0% 0% no-repeat padding-box;
+  background: #a255fc 0% 0% no-repeat padding-box;
 }
 
 .m_btn:disabled {
-  background: #F1EAFF 0% 0% no-repeat padding-box;
-  color: #C4B9DB;
+  background: #f1eaff 0% 0% no-repeat padding-box;
+  color: #c4b9db;
 }
 
 .m_btn::-moz-focus-inner {
