@@ -1,5 +1,5 @@
 <template>
-  <button class="m_btn">
+  <button class="m_btn" :class="{ m_btn_shadow: shadow, m_btn_outline: outline }" :disabled="disabled">
     <slot></slot>
   </button>
 </template>
@@ -8,7 +8,9 @@
 export default {
   name: "m-button",
   props: {
-    small: Boolean
+    shadow: Boolean,
+    outline: Boolean,
+    disabled: Boolean
   }
 };
 </script>
@@ -17,7 +19,6 @@ export default {
 <style scoped>
 .m_btn {
   background: #6524fb 0% 0% no-repeat padding-box;
-  width: 98px;
   height: 42px;
   color: #ffffff;
   font-size: 14px;
@@ -26,6 +27,7 @@ export default {
   border-radius: 100px;
   outline: 0;
   vertical-align: middle;
+  padding: 11px 26px;
 }
 
 .m_btn:hover {
@@ -42,6 +44,29 @@ export default {
 }
 
 .m_btn::-moz-focus-inner {
+  border: 0;
+}
+
+.m_btn_shadow {
+  box-shadow: 0px 3px 9px #00000014;
+}
+
+.m_btn_outline {
+  border: 1px solid #651fff;
+  background: none;
+  color: #651fff;
+}
+
+.m_btn_outline:hover {
+  background: #bb9bff59 0% 0% no-repeat padding-box;
+}
+
+.m_btn_outline:active {
+  background: #a255fc8c 0% 0% no-repeat padding-box;
+}
+
+.m_btn_outline:disabled {
+  background: #f1eaff 0% 0% no-repeat padding-box;
   border: 0;
 }
 </style>
